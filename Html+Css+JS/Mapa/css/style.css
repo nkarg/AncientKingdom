@@ -1,0 +1,11 @@
+
+
+body{
+	background-image: url("../rpg_map_mockup___choose_location_by_kirokaze-d8t3xxc.png");
+	background-repeat: no-repeat;
+    background-size: 100%;
+    cursor:url(../glove.png), pointer;
+    cursor:url(../icono.png), default;
+    height: 840px;
+
+}

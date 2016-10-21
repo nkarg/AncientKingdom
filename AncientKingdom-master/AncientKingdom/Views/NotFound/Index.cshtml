@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    @Styles.Render("~/Content/materialize.min.css")
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>404</title>
+</head>
+<body>
+    <audio id="mapa" src="~/Images/Notfound/The Legend of Heroes- Trails of Cold Steel II OST - Severe Blow.mp3" autoplay loop></audio>
+    <div class="slider fullscreen">
+        <ul class="slides">
+            <li>
+                <img src="~/Images/Notfound/aura-kingdom-anime-mmo-rpg.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Estamos Trabajando!</h3>
+                    <h5 class="light grey-text text-lighten-3">Espera un poco.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="~/Images/Notfound/Holy_Sword-loadingscreen.png"> <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Humo Humo</h3>
+                    <h5 class="light grey-text text-lighten-3">everywhere.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="~/Images/Notfound/rpg-maker-mv-wallpaper-no-logo-1920x1080.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Eres tu</h3>
+                    <h5 class="light grey-text text-lighten-3">Chuwal?</h5>
+                </div>
+            </li>
+            <li>
+                <img src="~/Images/Notfound/thumb-1920-710943.jpg"> <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Se busca</h3>
+                    <h5 class="light grey-text text-lighten-3">Diseñador Grafico.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    @Scripts.Render("~/Scripts/jquery.js")
+    @Scripts.Render("~/Scripts/materialize.js")
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+    </script>
+</body>
+</html>

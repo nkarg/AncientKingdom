@@ -38,3 +38,43 @@ c:\users\ryszard\documents\visual studio 2015\Projects\AncientKingdom\AncientKin
 c:\users\ryszard\documents\visual studio 2015\Projects\AncientKingdom\AncientKingdom\obj\Debug\AncientKingdom.csprojResolveAssemblyReference.cache
 c:\users\ryszard\documents\visual studio 2015\Projects\AncientKingdom\AncientKingdom\obj\Debug\AncientKingdom.dll
 c:\users\ryszard\documents\visual studio 2015\Projects\AncientKingdom\AncientKingdom\obj\Debug\AncientKingdom.pdb
+D:\AncientKingdom\AncientKingdom\bin\roslyn\csc.exe
+D:\AncientKingdom\AncientKingdom\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\AncientKingdom\AncientKingdom\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\AncientKingdom\AncientKingdom\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\AncientKingdom\AncientKingdom\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\AncientKingdom\AncientKingdom\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\AncientKingdom\AncientKingdom\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\AncientKingdom\AncientKingdom\bin\roslyn\System.Collections.Immutable.dll
+D:\AncientKingdom\AncientKingdom\bin\roslyn\System.Reflection.Metadata.dll
+D:\AncientKingdom\AncientKingdom\bin\roslyn\vbc.exe
+D:\AncientKingdom\AncientKingdom\bin\roslyn\VBCSCompiler.exe
+D:\AncientKingdom\AncientKingdom\bin\roslyn\VBCSCompiler.exe.config
+D:\AncientKingdom\AncientKingdom\bin\AncientKingdom.dll.config
+D:\AncientKingdom\AncientKingdom\bin\AncientKingdom.dll
+D:\AncientKingdom\AncientKingdom\bin\AncientKingdom.pdb
+D:\AncientKingdom\AncientKingdom\bin\Antlr3.Runtime.dll
+D:\AncientKingdom\AncientKingdom\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\AncientKingdom\AncientKingdom\bin\Microsoft.Web.Infrastructure.dll
+D:\AncientKingdom\AncientKingdom\bin\Newtonsoft.Json.dll
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Helpers.dll
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Mvc.dll
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Optimization.dll
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Razor.dll
+D:\AncientKingdom\AncientKingdom\bin\System.Web.WebPages.Deployment.dll
+D:\AncientKingdom\AncientKingdom\bin\System.Web.WebPages.dll
+D:\AncientKingdom\AncientKingdom\bin\System.Web.WebPages.Razor.dll
+D:\AncientKingdom\AncientKingdom\bin\WebGrease.dll
+D:\AncientKingdom\AncientKingdom\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Helpers.xml
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Mvc.xml
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Optimization.xml
+D:\AncientKingdom\AncientKingdom\bin\System.Web.Razor.xml
+D:\AncientKingdom\AncientKingdom\bin\System.Web.WebPages.xml
+D:\AncientKingdom\AncientKingdom\bin\System.Web.WebPages.Deployment.xml
+D:\AncientKingdom\AncientKingdom\bin\System.Web.WebPages.Razor.xml
+D:\AncientKingdom\AncientKingdom\bin\Antlr3.Runtime.pdb
+D:\AncientKingdom\AncientKingdom\bin\Newtonsoft.Json.xml
+D:\AncientKingdom\AncientKingdom\obj\Debug\AncientKingdom.csprojResolveAssemblyReference.cache
+D:\AncientKingdom\AncientKingdom\obj\Debug\AncientKingdom.dll
+D:\AncientKingdom\AncientKingdom\obj\Debug\AncientKingdom.pdb

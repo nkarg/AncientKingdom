@@ -1,6 +1,6 @@
 function jugar() { window.location = "Book/index"; }
 
-function muro() { window.location = "NotFound/Index"; }
+function muro() { window.location = "Map/Index"; }
 $(document).ready(function () {
 
   var num = 350;

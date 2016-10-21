@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "Home";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AncientKingdom</title>
+    @Styles.Render("~/Content/styleHome.css")
+    @Scripts.Url("~/Scripts/indexHome.js")
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="holder">
+        <div class="button" onclick="jugar();">
+            <p class="btnText">Historia</p>
+            <div class="btnTwo">
+                <!--<p class="btnText2">Historia</p>-->
+            </div>
+        </div>
+        <div class="button" onclick="muro();">
+            <p class="btnText">Lista Heroes<a href="https://www.google.com.ar/?gws_rd=ssl"></a></p>
+            <div class="btnTwo">
+                <!--<p class="btnText2">Muro</p>-->
+            </div>
+        </div>
+    </div>
+    <img class="swords" src="~/Images/Home/s7.png">
+    <div class="perspective">
+        <div class="space">
+        </div>
+    </div>
+
+    @Scripts.Render("http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    @Scripts.Render("~/Scripts/indexHome.js")
+    <audio src="~/Images/Home/sonidomenu.mp3" autoplay loop></audio>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MapaHTML</title>
+    @Styles.Render("~/Content/styleMap.css")
+    @Scripts.Render("~/Scripts/mapa.js")
+</head>
+<body>
+    <audio id="mapa" src="~/Images/Map/Trails in the Skies.mp3" controls autoplay loop></audio>
+    <a href="https://www.google.com.ar"><div style="height: 100px;background-color: rgba(255, 255, 255, 0);top: 195px;left: 125px;width: 100px;position: absolute;"></div></a>
+    <a href="https://www.google.com.ar"><div style="height: 100px;background-color: rgba(255, 255, 255, 0);top: 400px;right: 85px;width: 100px;position: absolute;"></div></a>
+    <a href="https://www.google.com.ar"><div style="height: 100px;background-color: rgba(255, 255, 255, 0);top: 290px;left: 750px;width: 100px;position: absolute;"></div></a>
+    <a href="https://www.google.com.ar"><div style="height: 100px;background-color: rgba(255, 255, 255, 0);top: 360px;left: 450px;width: 100px;position: absolute;"></div></a>
+    <a href="https://www.google.com.ar"><div style="height: 100px;background-color: rgba(255, 255, 255, 0);top: 125px;right: 330px;width: 100px;position: absolute;"></div></a>
+    <a href="https://www.google.com.ar"><div style="height: 100px;background-color: rgba(255, 255, 255, 0);top: 80px;left: 330px;width: 100px;position: absolute;"></div></a>
+    <div>
+        <button onclick="document.getElementById('mapa').play()">Play</button>
+        <button onclick="document.getElementById('mapa').pause()">Stop</button>
+        <button onclick="document.getElementById('mapa').volume+=0.1">Mas</button>
+        <button onclick="document.getElementById('mapa').volume-=0.1">Menos</button>
+    </div>
+</body>
+</html>

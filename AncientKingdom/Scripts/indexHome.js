@@ -1,4 +1,4 @@
-function jugar() { window.location = "Book/index"; }
+function jugar() { window.location = "Book/Index"; }
 
 function muro() { window.location = "Map/Index"; }
 $(document).ready(function () {

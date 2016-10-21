@@ -1,7 +1,0 @@
-body{
-	background-image: url("../Images/Map/rpg_map.png");
-	background-repeat: no-repeat;
-    background-size: 100%;
-    cursor:url("../Images/Map/icono.png"), auto;
-    height: 840px;
-}

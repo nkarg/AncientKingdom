@@ -1,7 +1,27 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Castle";
+    Layout = null;
 }
 
-<h2>This is the Castle!</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Batalla</title>
+    @Styles.Render("~/Content/styleBattle.css")
+</head>
+<body>
 
+    <div id="app-root">
+        <img class="pen-preview-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/b4-pen-preview.png">
+    </div>
+    <script src='https://fb.me/react-15.1.0.min.js'></script>
+    <script src='https://fb.me/react-dom-15.1.0.min.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.0/howler.min.js'></script>
+    @Scripts.Render("~/Scripts/miJS.js")
+    @Scripts.Render("~/Scripts/indexBattle.js")
+
+</body>
+</html>

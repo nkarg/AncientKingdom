@@ -120,7 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Content\BookController.cs" />
+    <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\CastleController.cs" />
     <Compile Include="Controllers\CitySocererController.cs" />
     <Compile Include="Controllers\CityThiefController.cs" />

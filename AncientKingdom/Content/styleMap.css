@@ -1,7 +1,29 @@
 body{
-	background-image: url("../Images/Map/rpg_map.png");
+	background: url(../Images/Map/rpg_map2.png);
 	background-repeat: no-repeat;
-    background-size: 100%;
-    cursor:url("../Images/Map/icono.png"), auto;
+    background-size: cover;
+    cursor: url("../Images/Map/icono.png"), auto;
     height: 840px;
+}
+
+a:hover{
+    cursor: url("../Images/Map/pointer.cur"), pointer;
+}
+
+.button {
+    cursor: url("../Images/Map/pointer.cur"), pointer;
+    background: #4A90E2;
+    margin: 20px auto;
+    width: 55px;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    border-bottom: 0.0em solid #2378db;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2em 0.4em;
+    border-radius: 0.5em;
 }

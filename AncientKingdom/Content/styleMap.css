@@ -1,10 +1,13 @@
 body{
-	background: url(../Images/Map/rpg_map2.png);
+	background: url(../Images/Map/rpg_map2.png) left top;
 	background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
     cursor: url("../Images/Map/icono.png"), auto;
     height: 840px;
 }
+
+
 
 a:hover{
     cursor: url("../Images/Map/pointer.cur"), pointer;

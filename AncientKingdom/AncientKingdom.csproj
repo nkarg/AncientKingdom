@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{71E0AD0D-8653-42B2-9001-3B76793AD253}</ProjectGuid>
+    <ProjectGuid>{A4B96E76-F8EC-4CCC-8328-94FC05EA0F18}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -115,36 +115,190 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\CastleController.cs" />
     <Compile Include="Controllers\CitySocererController.cs" />
     <Compile Include="Controllers\CityThiefController.cs" />
     <Compile Include="Controllers\CityWarriorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Controllers\NotFoundController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-flatly.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\materialize.css" />
+    <Content Include="Content\materialize.min.css" />
+    <Content Include="Content\normalizeBook.css" />
+    <Content Include="Content\resetThief.css" />
+    <Content Include="Content\styleBattle.css" />
+    <Content Include="Content\styleBook.css" />
+    <Content Include="Content\styleHome.css" />
+    <Content Include="Content\styleMap.css" />
+    <Content Include="Content\styleNotfound.css" />
+    <Content Include="Content\styleSideBar.css" />
+    <Content Include="Content\styleThief.css" />
     <Content Include="Content\styleWarrior.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Battle\Belief.mp3" />
+    <Content Include="Images\Battle\I miss you.mp3" />
+    <Content Include="Images\Battle\swpx.png" />
+    <Content Include="Images\Battle\swpx2.png" />
+    <Content Include="Images\Battle\swpxAlpha.png" />
+    <Content Include="Images\Battle\swpxBeta.png" />
+    <Content Include="Images\Battle\swpxBeta1.png" />
+    <Content Include="Images\Battle\swpxBeta2.png" />
+    <Content Include="Images\Battle\The Legend of Heroes Trails of Cold Steel - BattleTrailer %28mp3cut.net%29.mp3" />
+    <Content Include="Images\Book\battle.jpg" />
+    <Content Include="Images\Book\BlueDestination.mp3" />
+    <Content Include="Images\Book\bones.jpg" />
+    <Content Include="Images\Book\bpage1.jpg" />
+    <Content Include="Images\Book\com-illust-characters.jpg" />
+    <Content Include="Images\Book\cover.jpg" />
+    <Content Include="Images\Book\cover1.jpg" />
+    <Content Include="Images\Book\gates.jpg" />
+    <Content Include="Images\Book\page1.jpg" />
+    <Content Include="Images\Book\page10.jpg" />
+    <Content Include="Images\Book\page11.jpg" />
+    <Content Include="Images\Book\page12.jpg" />
+    <Content Include="Images\Book\page13.jpg" />
+    <Content Include="Images\Book\page14.jpg" />
+    <Content Include="Images\Book\page15.jpg" />
+    <Content Include="Images\Book\page16.jpg" />
+    <Content Include="Images\Book\page3.jpg" />
+    <Content Include="Images\Book\page4.jpg" />
+    <Content Include="Images\Book\page5.jpg" />
+    <Content Include="Images\Book\page6.jpg" />
+    <Content Include="Images\Book\page7.jpg" />
+    <Content Include="Images\Book\page8.jpg" />
+    <Content Include="Images\Book\page9.jpg" />
+    <Content Include="Images\Book\pageX.jpg" />
+    <Content Include="Images\Book\title.jpg" />
+    <Content Include="Images\Home\Don%27t be Defeated by a Friend!.mp3" />
+    <Content Include="Images\Home\HeatedMind.mp3" />
+    <Content Include="Images\Home\logoapp.png" />
+    <Content Include="Images\Home\masks.png" />
+    <Content Include="Images\Home\s7.png" />
+    <Content Include="Images\Home\sonidomenu.mp3" />
+    <Content Include="Images\Map\castle.png" />
+    <Content Include="Images\Map\castle_bw.png" />
+    <Content Include="Images\Map\city3.png" />
+    <Content Include="Images\Map\city3_bw.png" />
+    <Content Include="Images\Map\city5.png" />
+    <Content Include="Images\Map\city5_bw.png" />
+    <Content Include="Images\Map\city6.png" />
+    <Content Include="Images\Map\city6_bw.png" />
+    <Content Include="Images\Map\city8.png" />
+    <Content Include="Images\Map\city8_bw.png" />
+    <Content Include="Images\Map\Erion.jpg" />
+    <Content Include="Images\Map\icono.png" />
+    <Content Include="Images\Map\pointer.cur" />
+    <Content Include="Images\Map\rpg_map.png" />
+    <Content Include="Images\Map\rpg_map2.png" />
+    <Content Include="Images\Map\torre.png" />
+    <Content Include="Images\Map\torre_bw.png" />
+    <Content Include="Images\Map\Trails in the Skies.mp3" />
+    <Content Include="Images\NotFound\aura-kingdom-anime-mmo-rpg.jpg" />
+    <Content Include="Images\NotFound\Aura-Kingdom-wallpaper-1.jpg" />
+    <Content Include="Images\NotFound\big_thumb_3be3b392ba1cb7cd3462ec71ddf1ff10.jpg" />
+    <Content Include="Images\NotFound\favicon-32x32.png" />
+    <Content Include="Images\NotFound\favicon.ico" />
+    <Content Include="Images\NotFound\GoogleMedium.jpg" />
+    <Content Include="Images\NotFound\Holy_Sword-loadingscreen.png" />
+    <Content Include="Images\NotFound\pandoras-tower-wallpaper.jpg" />
+    <Content Include="Images\NotFound\rpg-maker-mv-wallpaper-no-logo-1920x1080.jpg" />
+    <Content Include="Images\NotFound\The Legend of Heroes- Trails of Cold Steel II OST - Law of the Battlefield.mp3" />
+    <Content Include="Images\NotFound\The Legend of Heroes- Trails of Cold Steel II OST - Severe Blow.mp3" />
+    <Content Include="Images\NotFound\thumb-1920-710943.jpg" />
+    <Content Include="Images\NotFound\xenoblade-chronicles-wallpaper-0002.jpg" />
+    <Content Include="Images\Thief\A0.png" />
+    <Content Include="Images\Thief\A1.png" />
+    <Content Include="Images\Thief\A2.png" />
+    <Content Include="Images\Thief\A3.png" />
+    <Content Include="Images\Thief\A4.png" />
+    <Content Include="Images\Thief\A5.png" />
+    <Content Include="Images\Thief\A6.png" />
+    <Content Include="Images\Thief\A7.png" />
+    <Content Include="Images\Thief\A8.png" />
+    <Content Include="Images\Thief\Afterschool Hours.mp3" />
+    <Content Include="Images\Thief\EvenDrivenWall.mp3" />
+    <Content Include="Images\Warrior\iconoguerrero.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Content\lessBook.less" />
+    <Content Include="Content\lessSideBar.less" />
+    <Content Include="Content\styleThief.scss" />
+    <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
+    <Content Include="Scripts\indexBattle.js" />
+    <Content Include="Scripts\indexBook.js" />
+    <Content Include="Scripts\indexHome.js" />
+    <Content Include="Scripts\indexSideBar.js" />
+    <Content Include="Scripts\indexThief.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -152,6 +306,10 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\mapa.js" />
+    <Content Include="Scripts\materialize.js" />
+    <Content Include="Scripts\materialize.min.js" />
+    <Content Include="Scripts\miJS.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -167,18 +325,37 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Castle\Index.cshtml" />
-    <Content Include="Views\CityThief\Index.cshtml" />
-    <Content Include="Views\CitySocerer\Index.cshtml" />
-    <Content Include="Views\CityWarrior\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Book\Index.cshtml" />
+    <Content Include="Views\Castle\Index.cshtml" />
+    <Content Include="Views\CitySocerer\Index.cshtml" />
+    <Content Include="Views\CityThief\Index.cshtml" />
+    <Content Include="Views\CityWarrior\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Map\Index.cshtml" />
     <Content Include="Views\NotFound\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -204,9 +381,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58829</DevelopmentServerPort>
+          <DevelopmentServerPort>58442</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58829/</IISUrl>
+          <IISUrl>http://localhost:58442/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

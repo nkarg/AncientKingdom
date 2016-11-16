@@ -21,7 +21,7 @@ var $board = $('main'),
     winsCount = 0,
     attemptsCount = 0,
     attemptsOverallCount = 0,
-    tooManyAttempts = 8,
+    tooManyAttempts = 6,
     timeoutLength = 600,
     card1, card2, msg;
 
@@ -124,11 +124,11 @@ $card.on('click', function() {
         msg = "Asi se hace!!!";
         $successIcon.attr(dataType, "sword");
         break;
-      case (attemptsCount > 2 && attemptsCount <= 5):
+      case (attemptsCount > 2 && attemptsCount <= 4):
         msg = "Estuvo bien, lo logramos!";
         $successIcon.attr(dataType, "escudo");
         break;
-      case (attemptsCount > 5 && attemptsCount <= 8):
+      case (attemptsCount > 4 && attemptsCount <= 6):
         msg = "Podria haber sido mejor!";
         $successIcon.attr(dataType, "rayo");
         break;

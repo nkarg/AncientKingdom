@@ -9,6 +9,7 @@ namespace AncientKingdom.Controllers
     public class BookController : Controller
     {
         // GET: Book
+        [Authorize]
         public ActionResult Index()
         {
             return View();

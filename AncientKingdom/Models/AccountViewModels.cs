@@ -49,9 +49,8 @@ namespace AncientKingdom.Models
     public class LoginViewModel
     {
         [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
+        [Display(Name = "Nickname")]
+        public string Nickname { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -64,6 +63,10 @@ namespace AncientKingdom.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Nickname")]
+        public string Nickname { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

@@ -1,4 +1,4 @@
-@import "http://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css";
 @import "https://daneden.github.io/animate.css/animate.min.css";
 /*-------------------------------*/
@@ -11,6 +11,10 @@ body {
 body,
 html {
   height: 100%;
+  background-image: url(../Images/Map/rpg_map2.png);
+  background-size: 100%;
+  font-family: "Source Code Pro", monospace;
+  cursor: url("../Images/Map/icono.png"), auto;
 }
 .nav .open > a {
   background-color: transparent;
@@ -307,4 +311,39 @@ body a {
 }
 body a:hover {
   color: #ffffff;
+}
+element.style:hover{
+  background: #2378db
+}
+
+.button {
+  background: #4A90E2;
+  border-bottom: 0.2em solid #2378db;
+  margin : 5px auto;
+  width : 70px;
+  height : 30px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor: url("../Images/Map/pointer.cur"), pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+  text-decoration: none;
+  color: #fff;
+  padding: 0.2em 0.4em;
+  border-radius: 0.5em;
+  font: inherit;
+}
+
+.button:hover {
+  background: #2378db; 
+}
+.button:hover .btnTwo{ 
+  left: -115px;
+}
+.button:hover .btnText{ 
+  margin-left : 95px;
+}
+.button:active { 
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
 }

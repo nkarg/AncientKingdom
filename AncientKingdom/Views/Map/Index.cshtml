@@ -10,42 +10,54 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    @Styles.Render("~/Content/styleSideBar.css",
-        "~/Content/lessSideBar.less", "~/Content/styleMap.css")
-    @Scripts.Render("~/Scripts/mapa.js", "~/Scripts/indexSideBar.js")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    @Styles.Render("~/Content/styleSideBar.css")
+    @Scripts.Render("~/Scripts/jquery-1.10.2.js", "~/Scripts/mapa.js", "~/Scripts/indexSideBar.js")
 </head>
 <body>
     <div id="wrapper">
         <div class="overlay"></div>
+
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#"> Bootstrap 3 </a>
+                    <a href="#">
+                        AncientKingdom
+                    </a>
                 </li>
-                <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-fw fa-folder"></i> Page one</a></li>
-                <li><a href="#"><i class="fa fa-fw fa-file-o"></i> Second page</a></li>
-                <li><a href="#"><i class="fa fa-fw fa-cog"></i> Third page</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-home"></i> GoToMap</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-folder"></i> CityThief</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-file-o"></i> CityWarrior</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-cog"></i> CityWizard</a>
+                </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Achievements <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-header">Dropdown heading</li>
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li class="dropdown-header">Highscores</li>
+                        <li><a href="#">Points</a></li>
+                        <li><a href="#">Lives</a></li>
+                        <li><a href="#">Chuwales</a></li>
+                        <li><a href="#">Continues</a></li>
+                        <li><a href="#">Designers?</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-bank"></i> Page four</a>
+                    <a href="#"><i class="fa fa-fw fa-bank"></i> BossBattle</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-dropbox"></i> Page 5</a>
+                    <a href="#"><i class="fa fa-fw fa-dropbox"></i> cityWhiteMagic</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-twitter"></i> Last page</a>
+                    <a href="#"><i class="fa fa-fw fa-twitter"></i> EditUserProfile</a>
                 </li>
             </ul>
         </nav>
@@ -57,11 +69,26 @@
                 <span class="hamb-middle"></span>
                 <span class="hamb-bottom"></span>
             </button>
-        </div>
-        <div class="container">
+            <audio id="mapa" src="~/Images/Map/Trails in the Skies.mp3" controls autoplay loop></audio>
 
             <div>
-                <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/torre.png" style="width:200px; height:170px; top: 360px; right: 10px; position: absolute;" /></a>
+                <button class="button" onclick="document.getElementById('mapa').play()">
+                    <span class="glyphicons glyphicons-play"></span>Play
+                </button>
+
+                <button class="button" onclick="document.getElementById('mapa').pause()">
+                    <span class="glyphicons glyphicons-pause"></span>Pause
+                </button>
+
+                <button class="button" onclick="document.getElementById('mapa').volume+=0.1">
+                    <span class="glyphicons glyphicons-volume-up"></span>Up
+                </button>
+
+                <button class="button" onclick="document.getElementById('mapa').volume-=0.1">
+                    <span class="glyphicons glyphicons-volume-down"></span>Down
+                </button>
+            <div>
+            <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/torre.png" style="width:200px; height:170px; top: 360px; right: 10px; position: absolute;" /></a>
             </div>
             <div>
                 <a href="@Url.Content("~/Castle/Index")"><img src="~/Images/Map/castle.png" style="width: 297px; height: 198px;top: 210px;left: 650px;position: absolute;" /></a>
@@ -78,17 +105,12 @@
             <div>
                 <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/city5.png" style="height: 135px; width: 213px; top: 550px; left: 600px; position: absolute;" /></a>
             </div>
-            <div>
-                <button class="button" onclick="document.getElementById('mapa').play()">Play</button>
-                <button class="button" onclick="document.getElementById('mapa').pause()">Stop</button>
-                <button class="button" onclick="document.getElementById('mapa').volume+=0.1">Mas</button>
-                <button class="button" onclick="document.getElementById('mapa').volume-=0.1">Menos</button>
+
             </div>
         </div>
         <!-- /#page-content-wrapper -->
+
     </div>
     <!-- /#wrapper -->
-
-    <audio id="mapa" src="~/Images/Map/Trails in the Skies.mp3" controls autoplay loop></audio>
 </body>
 </html>

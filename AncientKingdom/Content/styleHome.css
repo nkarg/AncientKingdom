@@ -12,19 +12,6 @@ a{
     color: white;
 }
 
-.sword {
-  position: relative; 
-  top: -150px;
-  opacity: 0;
-  animation: fadeIn 6s linear 6s forwards;
-}
-
-.ancking {
-    position: absolute;
-    top: -40px;
-    opacity: 0;
-    animation: fadeIn 6s linear 6s forwards;
-}
 
 h1 {
   color: white;
@@ -79,6 +66,11 @@ h1 {
   }
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -89,7 +81,7 @@ h1 {
 }
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:700);
-html, body {font-family : Roboto; height: 100%; width: 100%; margin: 0;}
+html, body {font-family: "Source Code Pro", monospace; height: 100%; width: 100%; margin: 0;}
 
 #holder{
   -moz-user-select: -moz-none;
@@ -100,7 +92,7 @@ html, body {font-family : Roboto; height: 100%; width: 100%; margin: 0;}
   margin: 0 auto;
   position: relative;
   right: 0%;
-  top: 80%;
+  top: 20%;
   transform: translateY(-65%);
   box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
   border-radius: 2px;

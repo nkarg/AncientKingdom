@@ -304,9 +304,6 @@
     <Content Include="Images\Wizard\AOM3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\lessBook.less" />
-    <Content Include="Content\lessSideBar.less" />
-    <Content Include="Content\styleThief.scss" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\indexBattle.js" />
     <Content Include="Scripts\indexBook.js" />

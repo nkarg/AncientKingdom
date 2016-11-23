@@ -14,8 +14,12 @@
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     @Styles.Render("~/Content/styleSideBar.css")
     @Scripts.Render("~/Scripts/jquery-1.10.2.js", "~/Scripts/mapa.js", "~/Scripts/indexSideBar.js")
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+    <button class="btn-sound is-playing"></button>
+    <audio id="theme-song" src="~/Images/Map/Trails in the Skies.mp3" autoplay loop="loop"></audio>
+
     <div id="wrapper">
         <div class="overlay"></div>
 
@@ -69,9 +73,8 @@
                 <span class="hamb-middle"></span>
                 <span class="hamb-bottom"></span>
             </button>
-            <audio id="mapa" src="~/Images/Map/Trails in the Skies.mp3" controls autoplay loop></audio>
-
-            <div>
+            @*<audio id="mapa" src="~/Images/Map/Trails in the Skies.mp3" controls autoplay loop></audio>*@
+            @*<div>
                 <button class="button" onclick="document.getElementById('mapa').play()">
                     <span class="glyphicons glyphicons-play"></span>Play
                 </button>
@@ -87,7 +90,7 @@
                 <button class="button" onclick="document.getElementById('mapa').volume-=0.1">
                     <span class="glyphicons glyphicons-volume-down"></span>Down
                 </button>
-            <div>
+            <div>*@
             <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/torre.png" style="width:200px; height:170px; top: 360px; right: 10px; position: absolute;" /></a>
             </div>
             <div>

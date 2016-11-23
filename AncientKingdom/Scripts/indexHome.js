@@ -4,7 +4,6 @@ function libro() { window.location = "/Book/Index"; }
 function heroes() { window.location = "/NotFound/Index"; }
 
 $(document).ready(function () {
-
   var num = 350;
   var X, Y, Z, RX, RY;
 

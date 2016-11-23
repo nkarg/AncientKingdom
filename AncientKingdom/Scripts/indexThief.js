@@ -23,6 +23,7 @@ var $board = $('main'),
     attemptsOverallCount = 0,
     tooManyAttempts = 6,
     timeoutLength = 600,
+    gamename = 'JuegoDeCartas',
     card1, card2, msg;
 
 // Let's make some noise
@@ -120,9 +121,20 @@ $card.on('click', function() {
     }
     // Update success message based on the amount of attempts
     switch(true) {
-      case (attemptsCount <= 2):
-        msg = "Asi se hace!!!";
-        $successIcon.attr(dataType, "sword");
+        case (attemptsCount <= 2):
+            msg = "Asi se hace!!!";
+            $successIcon.attr(dataType, "sword");
+            console.log("haciend request!" + gamename);
+            $.post("/Achievement/CreateAchievement",
+                {
+                    "ThiefTries": attemptsCount,
+                    "ThiefLives": turnsCount,
+                    "NewAchievementID": gamename,
+                }, function (response) {
+                    console.log("TodoTranca")
+                }, function (error) {
+                    console.log("ExplotoTodo")
+                });
         break;
       case (attemptsCount > 2 && attemptsCount <= 4):
         msg = "Estuvo bien, lo logramos!";
@@ -137,6 +149,7 @@ $card.on('click', function() {
         $successIcon.attr(dataType, "oscuro");
         break;
     }
+      //Poner aca el post
     $successMsg.text(msg);
 
     setTimeout(function() {

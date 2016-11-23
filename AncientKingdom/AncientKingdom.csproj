@@ -196,6 +196,7 @@
     <Content Include="Content\styleBattle.css" />
     <Content Include="Content\styleBook.css" />
     <Content Include="Content\styleHome.css" />
+    <Content Include="Content\styleLogin.css" />
     <Content Include="Content\styleMap.css" />
     <Content Include="Content\styleNotfound.css" />
     <Content Include="Content\styleSideBar.css" />
@@ -311,6 +312,7 @@
     <Content Include="Scripts\materialize.min.js" />
     <Content Include="Scripts\miJS.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\prefixfree.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />

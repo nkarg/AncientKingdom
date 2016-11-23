@@ -12,4 +12,5 @@
 /// <reference path="materialize.js" />
 /// <reference path="mijs.js" />
 /// <reference path="modernizr-2.6.2.js" />
+/// <reference path="prefixfree.min.js" />
 /// <reference path="respond.js" />

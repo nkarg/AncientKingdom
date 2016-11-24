@@ -313,6 +313,7 @@
     <Content Include="Scripts\indexHome.js" />
     <Content Include="Scripts\indexSideBar.js" />
     <Content Include="Scripts\indexThief.js" />
+    <Content Include="Scripts\indexWizard.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

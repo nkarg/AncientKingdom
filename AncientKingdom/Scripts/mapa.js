@@ -1,11 +1,7 @@
-
-
 // Turn on the sound if you want that real deal throwback experience
 
-
-
 $(document).ready(function () {
-
+    $('[data-toggle="tooltip"]').tooltip();
     var $btnSound = $('.btn-sound'),
     $themeSongEl = $('#theme-song')[0],
     playSoundClass = 'is-playing';

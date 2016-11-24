@@ -9,7 +9,7 @@ body{
 	padding: 0;
 	background: #fff;
 	color: #fff;
-	font-family: 'Source Code Pro', monospace;
+	font-family: Arial;
 	font-size: 12px;
 }
 
@@ -51,13 +51,13 @@ body{
 .header div{
 	float: left;
 	color: #fff;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Exo', sans-serif;
 	font-size: 35px;
 	font-weight: 200;
 }
 
 .header div span{
-	color: rgb(255, 106, 0) !important;
+	color: #2561d2 !important;
 }
 
 .login{
@@ -78,7 +78,7 @@ body{
 	border: 1px solid rgba(255,255,255,0.6);
 	border-radius: 2px;
 	color: #fff;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
@@ -91,7 +91,7 @@ body{
 	border: 1px solid rgba(255,255,255,0.6);
 	border-radius: 2px;
 	color: #fff;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
@@ -106,7 +106,7 @@ body{
 	cursor: pointer;
 	border-radius: 2px;
 	color: #a18d6c;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	padding: 6px;

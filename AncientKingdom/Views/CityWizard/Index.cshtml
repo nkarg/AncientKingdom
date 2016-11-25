@@ -12,13 +12,14 @@
     @Scripts.Render("https://code.jquery.com/jquery-2.2.4.min.js", "~/Scripts/indexWizard.js")
 </head>
 <body>
+    <button class="btn-sound is-playing"></button>
+    <audio id="theme-song" src="~/Images/Notfound/The Legend of Heroes- Trails of Cold Steel II OST - Law of the Battlefield.mp3" autoplay loop="loop"></audio>
     <input type="radio" id="Guerrero" name="image" checked>
     <input type="radio" id="Mago" name="image">
     <input type="radio" id="Sabio" name="image">
     <label class="selectBG" for="Guerrero">Guerrero</label>
     <label class="selectBG" for="Mago">Mago</label>
     <label class="selectBG" for="Sabio">Sabio</label>
-
     <input type="radio" id="a-up" name="a-vertical">
     <input type="radio" id="a-middle" name="a-vertical" checked>
     <input type="radio" id="a-down" name="a-vertical">

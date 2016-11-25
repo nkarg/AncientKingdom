@@ -22,7 +22,7 @@ namespace AncientKingdom.Controllers
         public ActionResult CreateAchievement(NewAchievement NA)
         {
             var user = System.Web.HttpContext.Current.User;
-            var game = AC.Games.FirstOrDefault(x => x.Name == NA.NewAchievementID);
+            var game = AC.Games.FirstOrDefault(x => x.GameID == NA.NewAchievementID);
             //var currentuser = Membership.GetUser(User.Identity.Name);
             var achievement = new UserAchievement()
             {

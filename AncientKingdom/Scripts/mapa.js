@@ -5,6 +5,7 @@ $(document).ready(function () {
     var $btnSound = $('.btn-sound'),
     $themeSongEl = $('#theme-song')[0],
     playSoundClass = 'is-playing';
+    var livesMax = 0, triesMax = 99;
 
     $(".button").on({
         mouseenter: function () {
@@ -28,5 +29,15 @@ $(document).ready(function () {
     $.get("/Achievement/GetAchievements", {},
         function (response) {
             console.log(response)
-        });
+            $.each(response, function (i, item) {
+                if (item.Lives > livesMax) {
+                    livesMax = item.Lives;
+                }
+                if (item.Tries < triesMax) {
+                    triesMax = item.Tries;
+                }
+            });
+            $("#thiefLives").text("Lives " + livesMax);
+            $("#thiefContinues").text("Continues " + triesMax);
+    });
 });

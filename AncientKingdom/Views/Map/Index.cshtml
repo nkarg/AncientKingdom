@@ -1,4 +1,4 @@
-﻿
+﻿@using Microsoft.AspNet.Identity
 @{
     Layout = null;
 }
@@ -32,19 +32,45 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-home"></i> GoToMap</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-folder"></i> CityThief</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-file-o"></i> CityWarrior</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-cog"></i> CityWizard</a>
+                    <a href="#"><i class="fa fa-fw fa-male"></i> @User.Identity.GetUserName() </a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> Achievements <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> City of Wizard <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Highscores</li>
+                        <li><a href="#">Movements</a></li>
+                        <li><a href="#">Time</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> City of Thief <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Highscores</li>
+                        <li><a href="#" id="thiefLives">Lives</a></li>
+                        <li><a href="#" id="thiefContinues">Continues</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> City of Warrior <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Highscores</li>
+                        <li><a href="#">Lifebar</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> City of Sorceress <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Highscores</li>
+                        <li><a href="#">Points</a></li>
+                        <li><a href="#">Lives</a></li>
+                        <li><a href="#">Chuwales</a></li>
+                        <li><a href="#">Continues</a></li>
+                        <li><a href="#">Designers?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> City of Hero <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li class="dropdown-header">Highscores</li>
                         <li><a href="#">Points</a></li>
@@ -61,7 +87,11 @@
                     <a href="#"><i class="fa fa-fw fa-dropbox"></i> cityWhiteMagic</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-twitter"></i> EditUserProfile</a>
+                    @using (Html.BeginForm("LogOff", "Account"))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a style="text-decoration: none;"><i class="fa fa-fw fa-sign-out"></i><button class="btn btn-link" type="submit"> Cerrar sesión</button></a>
+                    }
                 </li>
             </ul>
         </nav>
@@ -91,27 +121,27 @@
                     <span class="glyphicons glyphicons-volume-down"></span>Down
                 </button>
             <div>*@
-            <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/torre.png" style="width:200px; height:170px; top: 360px; right: 10px; position: absolute;" data-toggle="tooltip" data-placement="left" title="Thief City"/></a>
-            </div>
-            <div>
-                <a href="@Url.Content("~/Castle/Index")"><img src="~/Images/Map/castle.png" style="width: 297px; height: 198px;top: 210px;left: 650px;position: absolute;" data-toggle="tooltip" data-placement="left" title="Castle of Riom"/></a>
-            </div>
-            <div>
-                <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/city3.png" style="width:174px; height: 147px;top: 300px;left: 400px;position: absolute;" data-toggle="tooltip" data-placement="left" title="Tooltip on bottom"/></a>
-            </div>
-            <div>
-                <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/city8.png" style="height:210px; width:223px;top: 20px;right: 70px;position: absolute;" data-toggle="tooltip" data-placement="left" title="Tooltip on bottom"/></a>
-            </div>
-            <div>
-                <a href="@Url.Content("~/CityThief/Index")"><img src="~/Images/Map/city6.png" style="height: 120px; width:186px;top: 30px;left: 250px;position: absolute;" data-toggle="tooltip" data-placement="left" title="Tooltip on bottom"/></a>
-            </div>
-            <div>
-                <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/city5.png" style="height: 135px; width: 213px; top: 550px; left: 600px; position: absolute;" data-toggle="tooltip" data-placement="left" title="Tooltip on bottom"/></a>
-            </div>
 
-            </div>
         </div>
         <!-- /#page-content-wrapper -->
+            <div>
+            <a href="@Url.Content("~/CityWizard/Index")"><img src="~/Images/Map/torre.png" style="width:200px; height:170px; top: 360px; right: 10px; position: absolute;" data-toggle="tooltip" data-placement="left" title="Wizard City"/></a>
+            </div>
+            <div>
+                <a href="@Url.Content("~/Castle/Index")"><img src="~/Images/Map/castle.png" style="width: 297px; height: 198px;top: 210px;left: 650px;position: absolute;" data-toggle="tooltip" data-placement="left" title="City of Hero"/></a>
+            </div>
+            <div>
+                <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/city3.png" style="width:174px; height: 147px;top: 300px;left: 400px;position: absolute;" data-toggle="tooltip" data-placement="left" title="Lorep Ipsum"/></a>
+            </div>
+            <div>
+                <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/city8.png" style="height:210px; width:223px;top: 20px;right: 70px;position: absolute;" data-toggle="tooltip" data-placement="left" title="Lorep Ipsum"/></a>
+            </div>
+            <div>
+                <a href="@Url.Content("~/CityThief/Index")"><img src="~/Images/Map/city6.png" style="height: 120px; width:186px;top: 30px;left: 250px;position: absolute;" data-toggle="tooltip" data-placement="left" title="Thief City"/></a>
+            </div>
+            <div>
+                <a href="@Url.Content("~/NotFound/Index")"><img src="~/Images/Map/city5.png" style="height: 135px; width: 213px; top: 550px; left: 600px; position: absolute;" data-toggle="tooltip" data-placement="left" title="lorep Ipsum"/></a>
+            </div>
 
     </div>
     <!-- /#wrapper -->

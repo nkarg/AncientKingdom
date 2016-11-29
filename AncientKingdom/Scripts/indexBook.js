@@ -6,6 +6,9 @@ pages.each(function(i) {
   if (i % 2 === 0) {
     page.css('z-index', (pages.length - i)); 
   }
+  $("#redirect").click(function () {
+      window.location = "/Map/Index"
+  })
 });
 
 $(window).load(function() {

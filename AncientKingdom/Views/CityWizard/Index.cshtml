@@ -13,6 +13,10 @@
 </head>
 <body>
     <button class="btn-sound is-playing"></button>
+    <div class="score">
+        <div class="turns">Moves: <span id="movesCount">0</span></div>
+        <div class="attempts">Time: <span id="theTarget">99</span></div>
+    </div>
     <audio id="theme-song" src="~/Images/Notfound/The Legend of Heroes- Trails of Cold Steel II OST - Law of the Battlefield.mp3" autoplay loop="loop"></audio>
     <input type="radio" id="Guerrero" name="image" checked>
     <input type="radio" id="Mago" name="image">
@@ -136,5 +140,16 @@
         </div>
     </div>
     <div class="winner">Asi se hace!</div>
+    <div class="success">
+        <div data-type="sword" class="success-icon">
+            <div class="front"></div>
+        </div>
+        <h2 class="success-message">Bien Hecho!    </h2>
+        <div class="score">
+            <div class="turns">Moves <span id="successMoves"></span></div>
+            <div class="attempts">Tiempo <span id="successTime"></span></div>
+        </div>
+        <button class="btn-continue">Continuar Aventura</button>
+    </div>
 </body>
 </html>

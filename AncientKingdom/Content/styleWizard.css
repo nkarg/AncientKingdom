@@ -13,7 +13,7 @@ body{
   height:60em;
   position:absolute;
   left:calc(50% - 30em);
-  top:calc(50% - 30em);
+  top:calc(52% - 30em);
   overflow:hidden;
 }
 [class^=peice]{
@@ -249,7 +249,7 @@ body{
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: rgba(31, 201, 251, 0.96);
+  background-color: hsla(194, 13%, 31%, 0.96);
   z-index: 999;
   opacity: 0;
   -webkit-transform: translate3d(100%, 0, 0);
@@ -268,6 +268,59 @@ body{
   transition: opacity 0.2s ease-out, transform 0s;
   transition: opacity 0.2s ease-out, transform 0s, -webkit-transform 0s;
 }
+
+.is-visible .success-icon .front {
+  opacity: 1;
+  -webkit-animation: bounce 0.5s 0.4s ease-out forwards;
+          animation: bounce 0.5s 0.4s ease-out forwards;
+}
+@-webkit-keyframes matchSuccess {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+            transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.05);
+            transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.05);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+            transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+  }
+}
+
+@-webkit-keyframes matchSuccess {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+            transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+  }
+  50% {
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.05);
+            transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.05);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+            transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+  }
+}
+
+@keyframes matchSuccess {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+        transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+    }
+
+    50% {
+        -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.05);
+        transform: translate3d(0, 0, 0) rotateY(180deg) scale(1.05);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+        transform: translate3d(0, 0, 0) rotateY(180deg) scale(1);
+    }
+}
+
 .success .success-message {
   color: white;
   font-size: 2.5rem;
@@ -333,9 +386,6 @@ body{
   z-index: 2;
 }
 
-
-
-
 .success-icon {
   position: relative;
   -webkit-transform: scale(1.5);
@@ -386,7 +436,62 @@ body{
           transform: translateY(2px);
   box-shadow: 0 2px 0 #a54418;
 }
-
+.score {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6px 12px;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(26, 26, 26, 0.8);
+  z-index: 99;
+}
+.score > * {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 48px;
+  padding-top: 3px;
+}
+.score > * span {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  margin-left: 6px;
+  font-size: 1.4em;
+  color: #DBB6AB;
+}
+.score > * span.is-updating {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+}
+.score > * span.last-turn {
+  color: red;
+}
 
 
 
@@ -411,10 +516,10 @@ body{
   width:8em;
   text-align:center;
   padding:1em 0;
-  background:#000;
+  background:#1d1a1a;;
   color:#fff;
   border:.25em solid #333;
-  margin:2em .25em;
+  margin:5em .25em;
 }
 #Guerrero:checked ~ *[for="Guerrero"],
 #Mago:checked ~ *[for="Mago"],

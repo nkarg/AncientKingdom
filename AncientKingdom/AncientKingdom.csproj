@@ -255,9 +255,12 @@
     <Content Include="Images\Home\masks.png" />
     <Content Include="Images\Home\s7.png" />
     <Content Include="Images\Home\sonidomenu.mp3" />
+    <Content Include="Images\Login\ALTINA.mp3" />
+    <Content Include="Images\Login\Bring up Trust!.mp3" />
     <Content Include="Images\Login\mapExample10.jpg" />
     <Content Include="Images\Login\mapKirokaze.png" />
     <Content Include="Images\Login\mapLogin.jpg" />
+    <Content Include="Images\Login\Take The Windward!.mp3" />
     <Content Include="Images\Map\castle.png" />
     <Content Include="Images\Map\castle_bw.png" />
     <Content Include="Images\Map\city3.png" />

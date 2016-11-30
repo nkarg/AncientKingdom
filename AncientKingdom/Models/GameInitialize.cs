@@ -6,7 +6,7 @@ using System.Web;
 
 namespace AncientKingdom.Models
 {
-    public class GameInitialize: DropCreateDatabaseAlways<AchievementContext>
+    public class GameInitialize: CreateDatabaseIfNotExists<AchievementContext>
     {
         protected override void Seed(AchievementContext act)
         {

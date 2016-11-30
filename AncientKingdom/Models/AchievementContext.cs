@@ -10,7 +10,7 @@ namespace AncientKingdom.Models
     {
         public AchievementContext(): base("DefaultConnection")
         {
-          //  Database.SetInitializer(new GameInitialize());
+            Database.SetInitializer(new GameInitialize());
         }
         public DbSet<Game> Games { get; set; }
         public DbSet<UserAchievement> Achievements { get; set; }

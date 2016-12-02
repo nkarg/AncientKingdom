@@ -1,0 +1,29 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+
+body {
+    background-image: url(../Images/Highscores/bg_highscores.jpg);
+    background-size: cover;
+}
+
+div {
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+}
+    
+.container .title {
+    text-align: center;
+}
+
+.score-container {
+    display:table;
+}
+
+.game-container {
+    background-color: rgba(0,0,0,0.5);
+    border: 0;
+    border-radius:5px;
+    margin-bottom:15px;
+    display: table-row;
+}

@@ -68,7 +68,7 @@ namespace AncientKingdom.Controllers
                 });
             }
             //construir un objeto que tenga el nombre del juego, vidas
-            return Json(listita, JsonRequestBehavior.AllowGet);
+            return Json(listita.OrderBy(x => x.Tries).OrderBy(x => x.Lives).ToList(), JsonRequestBehavior.AllowGet);
         }
     }
 }

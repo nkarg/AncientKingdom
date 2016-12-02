@@ -16,6 +16,10 @@ html {
   cursor: url("../Images/Map/icono.png"), auto;
   overflow:hidden; 
 }
+a:hover{
+  cursor: url("../Images/Map/Hand.png"), pointer;
+}
+
 .nav .open > a {
   background-color: transparent;
 }
@@ -364,7 +368,7 @@ element.style:hover{
   background-size: 100%;
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: url("../Images/Map/Hand.png"), pointer;
   z-index: 999;
 }
 .btn-sound:active {

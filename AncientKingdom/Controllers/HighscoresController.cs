@@ -9,6 +9,7 @@ namespace AncientKingdom.Controllers
     public class HighscoresController : Controller
     {
         // GET: Highscores
+        [Authorize]
         public ActionResult Index()
         {
             return View();

@@ -9,7 +9,7 @@ namespace AncientKingdom.Controllers
     public class NotAndaController : Controller
     {
         // GET: NotFound
-        
+        [Authorize]
         public ActionResult Index()
         {
             return View();

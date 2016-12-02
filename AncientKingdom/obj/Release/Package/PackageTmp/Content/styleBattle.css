@@ -59,7 +59,7 @@ html, body {
   font-family: "Source Code Pro", monospace; }
 
 body {
-  background: currentColor; }
+  background: #1A1A1A; }
 
 #app-root {
   height: 100%; }

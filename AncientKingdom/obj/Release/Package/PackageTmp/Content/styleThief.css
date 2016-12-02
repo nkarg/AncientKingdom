@@ -1,3 +1,7 @@
+html, body{
+      cursor: url("../Images/Map/icono.png"), auto;
+}
+
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -30,7 +34,7 @@ body {
   background-size: 100%;
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: url("../Images/Map/Hand.png"), pointer;
   z-index: 999;
 }
 .btn-sound:active {
@@ -155,7 +159,7 @@ main {
   padding-left: 12px;
   width: 120px;
   height: 150px;
-  cursor: pointer;
+  cursor: url("../Images/Map/Hand.png"), pointer;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   -webkit-transform-style: preserve-3d;

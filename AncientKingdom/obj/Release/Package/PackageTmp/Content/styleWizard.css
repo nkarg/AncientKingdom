@@ -1,3 +1,6 @@
+html, body{
+      cursor: url("../Images/Map/icono.png"), auto;
+}
 input[type="radio"]{
   display:none;
 }
@@ -281,7 +284,7 @@ h2.success-message {
   background-size: 100%;
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: url("../Images/Map/Hand.png"), pointer;
   z-index: 999;
 }
 .btn-sound:active {
@@ -457,3 +460,6 @@ body.no-flex {
     display:block;
 }
 
+label {
+      cursor: url("../Images/Map/hand.png"), auto;
+}

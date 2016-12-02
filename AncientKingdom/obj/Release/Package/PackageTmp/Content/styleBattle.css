@@ -59,7 +59,7 @@ html, body {
   font-family: "Source Code Pro", monospace; }
 
 body {
-  background: #E0E5EE; }
+  background: #1A1A1A; }
 
 #app-root {
   height: 100%; }
@@ -450,8 +450,9 @@ body {
 .battle-arena {
   height: 100%;
   width: 100%;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/stars.png") repeat repeat, linear-gradient(-180deg, rgba(95, 61, 113, 0.89) 0%, #D4D4E5 100%);
-  position: relative; }
+  background: url("../Images/Battle/animated-gifs-of-fighting-game-backgrounds-18.gif");
+  position: absolute;
+  background-size: cover; }
   .battle-arena .bottom-bar {
     position: absolute;
     bottom: 0;

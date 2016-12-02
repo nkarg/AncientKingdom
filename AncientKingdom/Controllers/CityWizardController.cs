@@ -9,6 +9,7 @@ namespace AncientKingdom.Controllers
     public class CityWizardController : Controller
     {
         // GET: CityWizard
+        [Authorize]
         public ActionResult Index()
         {
             return View();

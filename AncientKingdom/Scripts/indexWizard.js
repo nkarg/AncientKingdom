@@ -65,8 +65,8 @@
                 }
               $.post("/Achievement/CreateAchievement",
               {
-                  "ThiefTries": counter,
-                  "ThiefLives": count,
+                  "ThiefTries": count,
+                  "ThiefLives": counter,
                   "NewAchievementID": gameID,
               }, function (response) {
                   console.log("TodoTranca")

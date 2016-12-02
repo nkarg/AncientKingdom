@@ -41,11 +41,11 @@ $(document).ready(function () {
                     $("#thiefContinues").text("Continues " + triesMax);
                 }
                 else{
-                    if (item.Tries < movesMax) {
-                        movesMax = item.Tries;
+                    if (item.Lives < movesMax) {
+                        movesMax = item.Lives;
                     }
-                    if (item.Lives < timeMax) {
-                        timeMax = item.Lives;
+                    if (item.Tries < timeMax) {
+                        timeMax = item.Tries;
                     }
                     $("#wizardMovements").text("Movements " + movesMax);
                     $("#wizardTime").text("Time " + timeMax);

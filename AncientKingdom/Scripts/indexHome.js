@@ -1,7 +1,7 @@
-function muro() { window.location = "/NotFound/Index"; }
+function muro() { window.location = "/Highscores/Index"; }
 function jugar() { window.location = "/Map/Index"; }
 function libro() { window.location = "/Book/Index"; }
-function heroes() { window.location = "/NotFound/Index"; }
+function heroes() { window.location = "/Highscores/Index"; }
 
 $(document).ready(function () {
     var num = 350;

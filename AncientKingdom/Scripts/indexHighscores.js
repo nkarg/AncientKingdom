@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     $.get("/Achievement/GetHighscores", {},
         function (response) {
-        
+            console.log(response)
             var warriorContainer = $("#warrior-container");
             var wizardContainer = $("#wizard-container");
             var thiefContainer = $("#thief-container");

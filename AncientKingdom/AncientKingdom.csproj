@@ -175,10 +175,11 @@
     <Compile Include="Controllers\CityThiefController.cs" />
     <Compile Include="Controllers\CityWarriorController.cs" />
     <Compile Include="Controllers\CityWizardController.cs" />
+    <Compile Include="Controllers\HighscoresController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MapController.cs" />
-    <Compile Include="Controllers\NotFoundController.cs" />
+    <Compile Include="Controllers\NotAndaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -187,6 +188,7 @@
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\GameInitialize.cs" />
     <Compile Include="Models\GameThief.cs" />
+    <Compile Include="Models\Highscore.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NewAchievement.cs" />
@@ -310,6 +312,7 @@
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\indexBattle.js" />
     <Content Include="Scripts\indexBook.js" />
+    <Content Include="Scripts\indexHighscores.js" />
     <Content Include="Scripts\indexHome.js" />
     <Content Include="Scripts\indexSideBar.js" />
     <Content Include="Scripts\indexThief.js" />
@@ -368,8 +371,9 @@
     <Content Include="Views\CityWarrior\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Map\Index.cshtml" />
-    <Content Include="Views\NotFound\Index.cshtml" />
+    <Content Include="Views\NotAnda\Index.cshtml" />
     <Content Include="Views\CityWizard\Index.cshtml" />
+    <Content Include="Views\Highscores\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

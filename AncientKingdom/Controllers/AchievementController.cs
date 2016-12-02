@@ -52,5 +52,23 @@ namespace AncientKingdom.Controllers
             //construir un objeto que tenga el nombre del juego, vidas
             return Json(listita, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult GetHighscores()
+        {
+            var achvs = AC.Achievements.ToList();
+            List<Highscore> listita = new List<Highscore>();
+            foreach (var item in achvs)
+            {
+                listita.Add(new Highscore()
+                {
+                    UserName = item.UserID,
+                    GameName = item.Game.Name,
+                    Lives = item.ThiefLives,
+                    Tries = item.ThiefTries
+                });
+            }
+            //construir un objeto que tenga el nombre del juego, vidas
+            return Json(listita, JsonRequestBehavior.AllowGet);
+        }
     }
 }

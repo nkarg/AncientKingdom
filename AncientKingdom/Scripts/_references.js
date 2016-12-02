@@ -2,6 +2,7 @@
 /// <reference path="bootstrap.js" />
 /// <reference path="indexbattle.js" />
 /// <reference path="indexbook.js" />
+/// <reference path="indexhighscores.js" />
 /// <reference path="indexhome.js" />
 /// <reference path="indexsidebar.js" />
 /// <reference path="indexthief.js" />

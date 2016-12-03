@@ -206,6 +206,7 @@
     <Content Include="Content\resetThief.css" />
     <Content Include="Content\styleBattle.css" />
     <Content Include="Content\styleBook.css" />
+    <Content Include="Content\styleHighscores.css" />
     <Content Include="Content\styleHome.css" />
     <Content Include="Content\styleLogin.css" />
     <Content Include="Content\styleMap.css" />
@@ -240,6 +241,7 @@
     <Content Include="Images\Book\cover.jpg" />
     <Content Include="Images\Book\cover1.jpg" />
     <Content Include="Images\Book\gates.jpg" />
+    <Content Include="Images\Book\Land of Blue Skies.mp3" />
     <Content Include="Images\Book\page1.jpg" />
     <Content Include="Images\Book\page10.jpg" />
     <Content Include="Images\Book\page11.jpg" />

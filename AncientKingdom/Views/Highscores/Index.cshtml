@@ -9,16 +9,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Highscores!</title>
-    @Styles.Render("~/Content/styleHighscores.css", "~/Content/bootstrap.min.css")
+    @Styles.Render("~/Content/bootstrap.min.css", "~/Content/styleHighscores.css")
 </head>
 <body>
-
-
+    <audio src="~/Images/Book/Land of Blue Skies.mp3" autoplay loop></audio>
     <div class="col-md-12 container">
         <div class="col-md-12 title">
             <h3>Highscores!</h3>
         </div>
-        <div class="col-md-12 score-container">
+        @*<div class="col-md-12 score-container">
             <div id="thief-container" class="game-container">
                 <div class="col-md-12"><h3>Thief</h3></div>
                 <div class="col-md-12">
@@ -42,16 +41,56 @@
                     <div class="col-md-4">LifeBar</div>
                     <div class="col-md-4">Status</div>
                 </div>
-            </div>
+            </div>*@
 
 
             <!-- Dynamic items here -->
         </div>
-
-    </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"
-            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-            crossorigin="anonymous"></script>
+        <div class="container" style="background-color: rgba(0,0,0,0.5);">
+            <div class="col-md-12"><h1>Thief</h1></div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Lives</th>
+                                    <th>Tries</th>
+                                </tr>
+                            </thead>
+                            <tbody id="thief2-container"></tbody>
+                        </table>
+                    </div>
+            <div class="col-md-12"><h1>Wizard</h1></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Movements</th>
+                            <th>Timeleft</th>
+                        </tr>
+                    </thead>
+                    <tbody id="wizard2-container"></tbody>
+                </table>
+            </div>
+            <div class="col-md-12"><h1>Hero</h1></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Lifebar</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="warrior2-container"></tbody>
+                </table>
+            </div>
+                </div>
+            <script src="https://code.jquery.com/jquery-3.1.1.js"
+                    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+                    crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 @Scripts.Render("~/Scripts/indexHighscores.js")
 </html>

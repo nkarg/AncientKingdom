@@ -2,8 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
 html, body{
-    overflow:hidden; 
+    overflow:hidden;
+    cursor: url("../Images/Map/icono.png"), auto;
 }
+
+a:hover {
+    cursor: url("../Images/Map/hand.png"), pointer;
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -111,6 +117,7 @@ body{
 	font-weight: 400;
 	padding: 6px;
 	margin-top: 10px;
+    cursor: url("../Images/Map/hand.png"), pointer;
 }
 
 .login input[type=button]:hover{
@@ -133,6 +140,7 @@ body{
 
 .login input[type=button]:focus{
 	outline: none;
+    cursor: url("../Images/Map/pointer.cur"), pointer;
 }
 
 ::-webkit-input-placeholder{

@@ -233,6 +233,7 @@
     <Content Include="Images\Battle\swpxBeta1.png" />
     <Content Include="Images\Battle\swpxBeta2.png" />
     <Content Include="Images\Battle\The Legend of Heroes Trails of Cold Steel - BattleTrailer %28mp3cut.net%29.mp3" />
+    <Content Include="Images\bg_highscores.jpg" />
     <Content Include="Images\Book\battle.jpg" />
     <Content Include="Images\Book\BlueDestination.mp3" />
     <Content Include="Images\Book\bones.jpg" />
@@ -320,7 +321,8 @@
     <Content Include="Images\Wizard\AOM3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Properties\PublishProfiles\ancientkingdom.pubxml" />
+    <None Include="Properties\PublishProfiles\ancientkingdom - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ancientkingdom - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\indexBattle.js" />
     <Content Include="Scripts\indexBook.js" />

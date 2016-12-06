@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>City Thief</title>
+    @Styles.Render("~/Content/resetThief.css")
+    @Styles.Render("~/Content/styleThief.css")
+</head>
+<body>
+    <button class="btn-sound is-playing"></button>
+    <audio id="theme-song" src="~/Images/Thief/Afterschool Hours.mp3" autoplay loop="loop"></audio>
+    <div class="score">
+        <div class="turns">Turnos: <span>2</span></div>
+        <div class="attempts">Intentos: <span>0</span></div>
+        <div class="wins">Ganados: <span>0</span></div>
+    </div>
+    <main>
+        <div data-type="lanza" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="sword" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="planta" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="lanza" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="sword" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="planta" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="oscuro" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="sword" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="planta" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="oscuro" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="sword" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="planta" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="escudo" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="fuego" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="rayo" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="escudo" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="fuego" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+        <div data-type="rayo" data-matched="false" class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div>
+    </main>
+    <div class="success">
+        <div data-type="sword" class="success-icon">
+            <div class="front"></div>
+        </div>
+        <h2 class="success-message">Bien Hecho!    </h2>
+        <div class="score">
+            <div class="turns">Turnos <span>2</span></div>
+            <div class="attempts">Intentos <span>0</span></div>
+            <div class="wins">Ganados <span>0</span></div>
+            <div class="attempts-overall">Intentos Totales <span>0</span></div>
+        </div>
+        <button class="btn-continue">Continuar Aventura</button>
+    </div>
+    @Scripts.Render("https://code.jquery.com/jquery-2.2.4.min.js")
+    @Scripts.Render("~/Scripts/indexThief.js")
+</body>
+</html>

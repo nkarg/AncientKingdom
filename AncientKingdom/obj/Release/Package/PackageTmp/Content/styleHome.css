@@ -1,0 +1,164 @@
+body {
+  background: #0a0a0a;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: url("../Images/Map/icono.png"), auto;
+}
+
+a{
+    color: white;
+}
+
+
+h1 {
+  color: white;
+}
+.perspective {
+  perspective: 800px; 
+}
+
+.space {
+  position: relative;
+  margin: auto;
+  transform-style: preserve-3d;
+  width: 1500px;
+  height: 1500px;
+  animation: spin 6s linear infinite;
+  -webkit-animation: spin 6s linear forwards;
+  /*background: green; */
+}
+
+.star {
+  width: 3px;
+  height: 3px;
+  background: white;
+  position: absolute;
+  box-shadow: 0 0 20px 1px white;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+  }
+  80% {
+    -webkit-transform: rotateX(180deg) rotateY(180deg);
+  }
+    100% {
+    -webkit-transform: translateY(1000px) rotateX(180deg) rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  80% {
+    -webkit-transform: translateY(0px) rotateX(180deg) rotateY(180deg);
+  }
+  85% {
+    -webkit-transform: translateY(-20px) rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: translateY(1200px) rotateX(180deg) rotateY(180deg);
+  }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:700);
+html, body {font-family: "Source Code Pro", monospace; height: 100%; width: 100%; margin: 0;}
+
+#holder{
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  background: rgba(86, 59, 91, 0.05);
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  right: 0%;
+  top: 20%;
+  transform: translateY(-65%);
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+  border-radius: 2px;
+  opacity: 0;
+  animation: fadeIn 5s linear 5s forwards;
+}
+
+.start-overlay-link {
+    background: #4A90E2;
+    border-bottom: 0.2em solid #2378db;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2em 0.4em;
+    border-radius: 0.5em;
+}
+
+.button {
+  background: #4A90E2;
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+  transition: .2s;
+  cursor: url("../Images/Map/hand.png"), pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+  border-bottom: 0.0em solid #2378db;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.2em 0.4em;
+  border-radius: 0.5em;
+}
+.btnTwo {
+  position : relative;
+  width : 200px;
+  height : 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+  background: rgb(98, 185, 251);
+  left : -250px;
+  transition : .3s;
+  border-bottom: 0.0em solid #2378db;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.2em 0.4em;
+  border-radius: 0.5em;
+}
+.btnText {
+  color : white;
+  transition : .3s;
+  font-weight: bold;
+}
+.btnText2 {
+  margin-top : 63px;
+  margin-right : -115px;
+  color : #FFF;
+  font-weight: bold;
+}
+.button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+  left: -115px;
+}
+.button:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 95px;
+}
+.button:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}

@@ -9,6 +9,7 @@
     gameID = 3,
     counter = 0,
     msg,
+    save = true,
     count;
 
     var $btnSound = $('.btn-sound'),
@@ -41,7 +42,7 @@
             })
             if (isChecked) {
                 //esta completo 
-                console.log("tuvieja")
+                debugger;
                 $("#successMoves").text(counter);
                 $("#successTime").text(count);
                 $success.addClass(visibleClass);
@@ -63,19 +64,21 @@
                         $successIcon.attr(dataType, "oscuro");
                         break;
                 }
-              $.post("/Achievement/CreateAchievement",
-              {
-                  "ThiefTries": count,
-                  "ThiefLives": counter,
-                  "NewAchievementID": gameID,
-              }, function (response) {
-                  console.log("TodoTranca")
-              }, function (error) {
-                  console.log("ExplotoTodo")
-              });
                 $successMsg.text(msg);
+                if (save) {
+                    $.post("/Achievement/CreateAchievement",
+                   {
+                       "ThiefTries": count,
+                       "ThiefLives": counter,
+                       "NewAchievementID": gameID,
+                   }, function (response) {
+                       console.log("TodoTranca")
+                   }, function (error) {
+                       console.log("ExplotoTodo")
+                   });
+                    save = false;
+                }
             }
-         
         }, 1000);
     }
 

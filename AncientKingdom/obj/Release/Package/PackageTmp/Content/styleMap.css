@@ -1,0 +1,82 @@
+body{
+	background: url(../Images/Map/rpg_map2.png) left top;
+	background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    cursor: url("../Images/Map/icono.png"), auto;
+    height: 840px;
+}
+
+
+
+a:hover{
+    cursor: url("../Images/Map/pointer.cur"), pointer;
+}
+
+.button {
+    cursor: url("../Images/Map/pointer.cur"), pointer;
+    background: #4A90E2;
+    margin: 20px auto;
+    width: 55px;
+    height: 25px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+    border-bottom: 0.0em solid #2378db;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2em 0.4em;
+    border-radius: 0.5em;
+}
+
+.btn-sound {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/icon-sound-on.svg);
+  background-size: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 999;
+}
+.btn-sound:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+.btn-sound:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10%;
+  margin: auto;
+  width: 120%;
+  height: 1px;
+  background-color: white;
+  box-shadow: 0 0 0 2px black;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+@media (min-width: 400px) {
+  .btn-sound {
+    top: 4px;
+    right: 8px;
+    bottom: auto;
+  }
+}
+.btn-sound.is-playing {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/icon-sound-on.svg);
+  -webkit-animation: shake 10s 0.6s 3;
+          animation: shake 10s 0.6s 3;
+}
+.btn-sound.is-playing:before {
+  display: none;
+}

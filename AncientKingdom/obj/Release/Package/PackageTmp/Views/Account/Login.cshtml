@@ -1,0 +1,54 @@
+﻿@using AncientKingdom.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+
+@Styles.Render("~/Content/styleLogin.css")
+@Scripts.Render("~/Scripts/prefixfree.min.js")
+<audio src="~/Images/Login/Bring up Trust!.mp3" autoplay loop></audio>
+<div class="row">
+    <div class="body"></div>
+    <div class="grad"></div>
+    <div class="col-md-5">
+        <div class="header">
+            <div> Inicia<span> Sesión</span> </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="login">
+
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                @Html.TextBoxFor(m => m.Nickname, new { @placeholder = "Nickname" })
+
+                @Html.PasswordFor(m => m.Password, new { @placeholder = "Contraseña" })
+
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
+                <div class="checkbox">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    Recuérdame
+                </div>
+                <input type="submit" value="Log in" />
+                <p>
+                    @Html.ActionLink("Regístrate como usuario nuevo", "Register")
+                </p>
+                    <p>
+                        @Html.ActionLink("Olvidaste tu contraseña?", "ForgotPassword")
+                    </p>
+            }
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("http://codepen.io/assets/libs/fullpage/jquery.js")
+    @Scripts.Render("~/bundles/jqueryval")
+}
